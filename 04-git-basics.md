@@ -148,6 +148,6 @@ This is a reference guide for the git commands that we've gone over in lecture a
 If something goes wrong, use `git status` and `git log` to see if you can figure out what happened.
 Remember, don't panic, as long as you committed something, its virtually impossible to lose it
 
-For branching issues, try `git log --graph --full-history --pretty=format:"%h%x09%d%x20%s"`
+For branching issues, try `git log --graph --full-history`
 
-Since we should all have color set up we can try `git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"` for an even prettier view
+For creating SSH keys in github
