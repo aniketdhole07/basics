@@ -48,18 +48,13 @@ cat myfile.txt
 
 The find command will search a folder and ALL of its subdirectories. For
 example, if Judy searches her home folder for a file, find will look in her
-home folder, her Desktop folder, her cs180 folder, her Projects folder within
-the cs180 folder … until it has checked every directory and every file for the
+home folder, her Desktop folder, her documents folder, her Projects folder … until it has checked every directory and every file for the
 pattern.
 
 ```bash
 # Instructions
 # find <starting directory> <matching criteria and actions>
 ```
-
-[READ THIS](https://www.cs.purdue.edu//resources/find.html) BEFORE YOU USE FIND ON YOUR OWN!!
-
-Never, ever run the FIND command starting at the / directory on the CS machines. This is one of the main rules of the CS Department. Make sure to use find within your home directory.
 
 ```bash
 # allowed
@@ -83,8 +78,8 @@ Actual Examples
 # find a file within my Desktop folder or below named lab2key.txt
 find ~/Desktop -name "lab2key.txt"
 
-# find all .class files in my cs180/ directory or below and delete them
-find ~/cs180 -name "*.class" -exec rm {} \;
+# find all .class files in my documents/ directory or below and delete them
+find ~/documents -name "*.class" -exec rm {} \;
 
 # previous command explained
 # find <directory to search> -name <name including wildcard> -exec <command to execute> {} \;
@@ -108,11 +103,11 @@ Note that this is different from `find` which will search through file names to 
 # -w : match whole word  
 # -r : search recursively in sub-folders
 
-# search within files of the project5 folder for occurrences of the text "main"
-grep -n "main" ~/cs180/project5/*
+# search within files of the projects folder for occurrences of the text "main"
+grep -n "main" ~/documents/projects/*
 
-# search all files in ~/cs180 and its subfolders for the whole word "ShapeFactory"
-grep -nrw "ShapeFactory" ~/cs180/
+# search all files in ~/documents and its subfolders for the whole word "ShapeFactory"
+grep -nrw "ShapeFactory" ~/documents/
 ```
 
 ### Input/Output Redirection ###
