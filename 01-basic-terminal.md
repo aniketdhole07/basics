@@ -1,4 +1,4 @@
-## Basic Terminal Commands ##
+# Basic Terminal Commands #
 
 Below, I have listed examples of the many common commands and practices of the
 shell. If you want to know more about specific commands, you can use ''man'' to
