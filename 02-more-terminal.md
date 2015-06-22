@@ -75,8 +75,8 @@ find / -name myfile
 Actual Examples
 
 ```bash
-# find a file within my Desktop folder or below named lab2key.txt
-find ~/Desktop -name "lab2key.txt"
+# find a file within my Desktop folder or below named readme.txt
+find ~/Desktop -name "readme.txt"
 
 # find all .class files in my documents/ directory or below and delete them
 find ~/documents -name "*.class" -exec rm {} \;
@@ -178,11 +178,9 @@ cat geo_input.txt | java PlaneGeometry | grep "SCALAR"
 # Instructions
 # wget <website>
 
-# Download a file from Kirby's website
-wget http://kirbyk.me/secret.html
-
-# Recursively download Kirby's website (download the entire thing)
-wget -r http://kirbyk.me
+# Recursively download from a website (download the entire thing)
+wget -r <website>
+#Be careful. Only use this if you need to download from the entire website.
 ```
 
 ### Text Statistics ###
