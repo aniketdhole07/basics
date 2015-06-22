@@ -20,7 +20,7 @@ man ls
 ls
 
 # list contents of random directory
-ls cs180
+ls documents
 
 # list contents with hidden files
 ls -a
@@ -40,7 +40,7 @@ ls -alt
 ```bash
 # navigate into a directory
 cd folder
-cd cs180/lab01
+cd homes/documents
 
 # navigate to the parent directory of the current working directory
 cd ..
@@ -50,9 +50,9 @@ cd
 
 # navigate to the previous directory.
 # example
-# cd cs180/projects/project2
-# cd cs190lab1
-# cd -   (this puts you back to cs190lab1)
+# cd homes/documents
+# cd projects
+# cd -   (this puts you back to projects)
 cd -
 ```
 
@@ -63,7 +63,7 @@ cd -
 pwd
 
 # output
-/homes/kkohlmor/cs180/lab01
+/homes/documents/
 ```
 
 ### Manipulating Files and Folders ###
@@ -109,8 +109,8 @@ rm -r path/to/folder
 mkdir newfolder
 
 # make a directory and all necessary parent directories
-# the folders /cs180/labs/ will be created if they don't exist already
-mkdir -p ~/cs180/labs/lab01
+# the folders /documents/projects/ will be created if they don't exist already
+mkdir -p ~/documents/projects/project1
 ```
 
 ### File Path Tips ###
@@ -147,21 +147,18 @@ mv ../file.txt .
 ```bash
 # navigate to the home directory of the current user
 cd ~
-
-# move the folder "project1" into the folder "cs180", which is located at the root of the user's home directory
-mv project1 ~/cs180
 ```
 
 #### '\ ' - proper space escape ####
 
 ```bash
-# I have a folder named "CS 180 Labs" at the root of my home directory.
+# I have a folder named "Coding Projects" at the root of my home directory.
 # I want to cd into that directory.
-cd ~/CS\ 180\ Labs
+cd ~/Coding \Projects
 # or
-cd "~/CS 180 Labs"
+cd "~/Coding Projects"
 # or
-cd ~/"CS 180 Labs"
+cd ~/"Coding Projects"
 ```
 
 
@@ -174,7 +171,7 @@ mv ../*.java .
 rm *.class *.txt old*
 
 # list details of files in /usr/bin that start with the letter l
-ls -l cs180/l*
+ls -l coding/l*
 
 # move file1.txt, file2.txt, and file3.txt to the the users home directory
 mv file1.txt file2.txt file3.txt ~/
