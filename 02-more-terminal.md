@@ -106,8 +106,8 @@ Note that this is different from `find` which will search through file names to 
 # search within files of the projects folder for occurrences of the text "main"
 grep -n "main" ~/documents/projects/*
 
-# search all files in ~/documents and its subfolders for the whole word "ShapeFactory"
-grep -nrw "ShapeFactory" ~/documents/
+# search all files in ~/documents and its subfolders for the whole word "shapes"
+grep -nrw "shapes" ~/documents/
 ```
 
 ### Input/Output Redirection ###
@@ -162,14 +162,14 @@ A pipe connects the output of one command to the input of another.
 # Instructions
 # program1 | program2
 
-# Feed the java program with the contents of geo_input.txt
-cat geo_input.txt | java PlaneGeometry
+# Feed the java program with the contents of input.txt
+cat input.txt | java program
 
 # NOTE: the above command is equivalent to
-java PlaneGeometry < geo_input.txt
+java program < input.txt
 
-# search for the term "SCALAR" in the output of PlaneGeometry
-cat geo_input.txt | java PlaneGeometry | grep "SCALAR"
+# search for the term "SCALAR" in the output of program
+cat input.txt | java program | grep "SCALAR"
 ```
 
 ### Downloading From the Internet ###
