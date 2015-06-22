@@ -35,7 +35,7 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git show <commit hash>
   
   # ex.
-  git show 68a3056
+  git show 77c365
   ```
 
 5. Looking at files in an old commit
@@ -44,8 +44,8 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git show <commit hash, branch, or tag>:<file_name>
   
   # ex.
-  git show master:Example.java
-  git show 68a3056:Example2.java
+  git show master:README.md
+  git show fb8374d5bb:04-git-basics.md
   ```
 
 6. Undoing an old commit
@@ -54,7 +54,7 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git revert <commit hash>
   
   # ex.
-  git revert 68a3056
+  git revert 77c365
   ```
 
 7. Check status of repository
