@@ -35,7 +35,7 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git show <commit hash>
   
   # ex.
-  git show 77c365
+  git show 58a29b8
   ```
 
 5. Looking at files in an old commit
@@ -54,7 +54,7 @@ This is a reference guide for the git commands that we've gone over in lecture a
   git revert <commit hash>
   
   # ex.
-  git revert 77c365
+  git revert 58a29b8
   ```
 
 7. Check status of repository
