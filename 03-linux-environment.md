@@ -46,12 +46,12 @@ printenv
 
 # Create and assign an environment variable
 # <Variable Name>="<Value>"
-NAME="kirby"
+NAME="arnav"
 
 # Reference an environment variable
 # $<Variable Name>
 echo My name is $NAME
-# My name is kirby
+# My name is arnav
 ```
 
 #### Important Environment Variables ####
